@@ -35,10 +35,9 @@ jobs:
      steps:
      # checkout the gh-pages branch
      - uses: actions/checkout@v3
-       env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        with:
          ref: gh-pages
+         token: ${{ secrets.GITHUB_TOKEN}}
        
      # download the doc files, most of which are generated above
      - name: Download Output Directory
