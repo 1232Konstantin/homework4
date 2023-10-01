@@ -9,7 +9,7 @@ namespace SharpHellsGate {
 
     /// <summary>
     /// Main implementation of the Hell's Gate technique.
-    /// Responsible for generating a RWX memory region, inject and execute system call stubs.
+    /// Responsible for generating a RWX memory region, inject and execute system call stubs .
     /// </summary>
     public class HellsGate {
 
