@@ -55,7 +55,7 @@ jobs:
          branch: gh-pages
          add: '["docDir/html/*"]'  
     
-    # Deploy the HTML documentation to GitHub Pages==
+    # Deploy the HTML documentation to GitHub Pages===
     #- name: GH Pages Deployment
       #uses: peaceiris/actions-gh-pages@v3
       #with:
