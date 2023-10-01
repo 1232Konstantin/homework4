@@ -51,7 +51,7 @@ jobs:
          author_name: Konstantin
          message: 'Example docs'
          branch: gh-pages
-         add: '["docDir/doxygen/CC/html/*"]'  
+         add: '["docDir/html/*"]'  
     
     # Deploy the HTML documentation to GitHub Pages==
     #- name: GH Pages Deployment
