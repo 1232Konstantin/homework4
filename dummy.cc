@@ -19,7 +19,7 @@ namespace SharpHellsGate {
         private bool IsGateReady { get; set; } = false;
 
         /// <summary>
-        /// Used as for mutual exclusion while injecting and execution of the system call stub in memory.
+        /// Used as for mutual exclusion while injecting and execution of the system call stub in memory .
         /// </summary>
         private object Mutant { get; set; } = new object();
 
