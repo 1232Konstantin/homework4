@@ -3,6 +3,9 @@
 #include <list>
 #include <tuple>
 using namespace std;
+/*!
+ * \brief Признак TEST предназначен для включения и отключения тестов
+ */
 #define TEST 0
 
 #include "print_ip.h"
@@ -21,8 +24,8 @@ int main()
         cout<<"is vector or list  (yes) "<<is_vector_or_list_std<decltype (v1)>::value<<endl;
         cout<<"is vector or list (no) "<<is_vector_or_list_std<decltype (i)>::value<<endl;
         cout<<"is vector or list (yes)"<<is_vector_or_list_std<decltype (l1)>::value<<endl;
-        cout<<"is tuple (yes)"<<is_not_empty_Tuple<decltype (t)>::value<<endl;
-        cout<<"is tuple (no)"<<is_not_empty_Tuple<decltype (l1)>::value<<endl;
+        cout<<"is tuple (yes)"<<is_Tuple<decltype (t)>::value<<endl;
+        cout<<"is tuple (no)"<<is_Tuple<decltype (l1)>::value<<endl;
     }
 
 
