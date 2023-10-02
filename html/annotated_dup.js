@@ -1,8 +1,5 @@
 var annotated_dup =
 [
-    [ "SharpHellsGate", "d5/d44/namespaceSharpHellsGate.html", [
-      [ "HellsGate", "db/d0f/classSharpHellsGate_1_1HellsGate.html", "db/d0f/classSharpHellsGate_1_1HellsGate" ]
-    ] ],
     [ "hasIterator", "d2/d94/structhasIterator.html", "d2/d94/structhasIterator" ],
     [ "howToDo", "d2/d3e/structhowToDo.html", "d2/d3e/structhowToDo" ],
     [ "howToDo< false >", "d8/da4/structhowToDo_3_01false_01_4.html", "d8/da4/structhowToDo_3_01false_01_4" ],

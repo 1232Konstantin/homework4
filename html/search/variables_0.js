@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['apitable_66',['APITable',['../db/d0f/classSharpHellsGate_1_1HellsGate.html#a1128aa295d8ed7dfc22209d48a299f7e',1,'SharpHellsGate::HellsGate']]]
+  ['dummy_40',['dummy',['../db/df4/structhasIterator_1_1True.html#a2deb6df25871a2ae7b74728972698af8',1,'hasIterator::True::dummy()'],['../d2/d4b/structis__not__empty__Tuple_1_1True.html#a66b3f541bce60185975bf3f6835636aa',1,'is_not_empty_Tuple::True::dummy()']]]
 ];
