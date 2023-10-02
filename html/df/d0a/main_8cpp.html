@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('df/d0a/main_8cpp.html','../../'); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ab946e2e7f7679350627acfded8e2658b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">TEST</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ab946e2e7f7679350627acfded8e2658b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак TEST предназначен для включения и отключения тестов  <a href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">More...</a><br /></td></tr>
 <tr class="separator:ab946e2e7f7679350627acfded8e2658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -121,7 +122,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00006">6</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<p>Признак TEST предназначен для включения и отключения тестов </p>
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00009">9</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
 
 </div>
 </div>
@@ -141,42 +144,43 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00010">10</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">TEST</a>)</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::vector&lt;int&gt; v1;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        std::list&lt;int&gt; l1;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span> i=0;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">auto</span> t=std::make_tuple(123,456,789,0);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;has iterator (yes) &quot;</span>&lt;&lt;<a class="code" href="../../d2/d94/structhasIterator.html">hasIterator</a>&lt;decltype (v1)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;has iterator (no) &quot;</span>&lt;&lt;<a class="code" href="../../d2/d94/structhasIterator.html">hasIterator</a>&lt;decltype (i)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list  (yes) &quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (v1)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list (no) &quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (i)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list (yes)&quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (l1)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is tuple (yes)&quot;</span>&lt;&lt;is_not_empty_Tuple&lt;decltype (t)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is tuple (no)&quot;</span>&lt;&lt;is_not_empty_Tuple&lt;decltype (l1)&gt;::value&lt;&lt;endl;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int8_t{-1});</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int16_t{0});</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int32_t{2130706433});</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int64_t{8875824491850138409});</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::string{<span class="stringliteral">&quot;Hello World!&quot;</span>});</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::vector&lt;int&gt;{100,200,300,400});</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::list&lt;short&gt;{400,300,200,100});</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::make_tuple(123,456,789,0));</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//print_ip( std::make_tuple(123,&quot;str&quot;,789,0));</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00013">13</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">TEST</a>)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        std::vector&lt;int&gt; v1;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        std::list&lt;int&gt; l1;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">int</span> i=0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">auto</span> t=std::make_tuple(123,456,789,0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;has iterator (yes) &quot;</span>&lt;&lt;<a class="code" href="../../d2/d94/structhasIterator.html">hasIterator</a>&lt;decltype (v1)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;has iterator (no) &quot;</span>&lt;&lt;<a class="code" href="../../d2/d94/structhasIterator.html">hasIterator</a>&lt;decltype (i)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list  (yes) &quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (v1)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list (no) &quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (i)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is vector or list (yes)&quot;</span>&lt;&lt;<a class="code" href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a>&lt;decltype (l1)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is tuple (yes)&quot;</span>&lt;&lt;<a class="code" href="../../d6/d97/structis__Tuple.html">is_Tuple</a>&lt;decltype (t)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        cout&lt;&lt;<span class="stringliteral">&quot;is tuple (no)&quot;</span>&lt;&lt;<a class="code" href="../../d6/d97/structis__Tuple.html">is_Tuple</a>&lt;decltype (l1)&gt;::value&lt;&lt;endl;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int8_t{-1});</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int16_t{0});</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int32_t{2130706433});</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( int64_t{8875824491850138409});</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::string{<span class="stringliteral">&quot;Hello World!&quot;</span>});</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::vector&lt;int&gt;{100,200,300,400});</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::list&lt;short&gt;{400,300,200,100});</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a>( std::make_tuple(123,456,789,0));</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="amain_8cpp_html_ab946e2e7f7679350627acfded8e2658b"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">TEST</a></div><div class="ttdeci">#define TEST</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00006">main.cpp:6</a></div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//print_ip( std::make_tuple(123,&quot;str&quot;,789,0));</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="ttc" id="amain_8cpp_html_ab946e2e7f7679350627acfded8e2658b"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#ab946e2e7f7679350627acfded8e2658b">TEST</a></div><div class="ttdeci">#define TEST</div><div class="ttdoc">Признак TEST предназначен для включения и отключения тестов</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00009">main.cpp:9</a></div></div>
 <div class="ttc" id="aprint__ip_8h_html_a7699b84ba45876798ef55b434748715d"><div class="ttname"><a href="../../dd/d97/print__ip_8h.html#a7699b84ba45876798ef55b434748715d">print_ip</a></div><div class="ttdeci">auto print_ip(T data) -&gt; typename std::enable_if&lt; std::is_same&lt; T, std::string &gt;::value &gt;::type</div><div class="ttdoc">Вывод на экран &quot;псевдо&quot; IP адреса из std::string.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00119">print_ip.h:119</a></div></div>
 <div class="ttc" id="astructhasIterator_html"><div class="ttname"><a href="../../d2/d94/structhasIterator.html">hasIterator</a></div><div class="ttdoc">Проверка класса Т на наличие итераторов</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00022">print_ip.h:23</a></div></div>
+<div class="ttc" id="astructis__Tuple_html"><div class="ttname"><a href="../../d6/d97/structis__Tuple.html">is_Tuple</a></div><div class="ttdoc">Проверка класса Т на предмет принадлежности к std::tuple.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00051">print_ip.h:52</a></div></div>
 <div class="ttc" id="astructis__vector__or__list__std_html"><div class="ttname"><a href="../../da/d84/structis__vector__or__list__std.html">is_vector_or_list_std</a></div><div class="ttdoc">Проверка класса Т на предмет принадлежности к std::vector или std::list.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00081">print_ip.h:82</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -187,7 +191,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d0a/main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated on Mon Oct 2 2023 06:43:38 for homework4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 2 2023 06:45:41 for homework4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
