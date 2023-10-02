@@ -94,6 +94,9 @@ $(document).ready(function(){initNavTree('d2/d94/structhasIterator.html','../../
 </div><!--header-->
 <div class="contents">
 
+<p>Проверка класса Т на наличие итераторов  
+ <a href="../../d2/d94/structhasIterator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -125,8 +128,21 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 struct hasIterator&lt; T &gt;</h3>
 
-
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00012">12</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<p>Проверка класса Т на наличие итераторов </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">T</td><td>шаблонный параметр.</td></tr>
+  </table>
+  </dd>
+</dl>
+<h4><a class="anchor" id="hasIterator"></a>
+Пример использования</h4>
+<div class="fragment"><div class="line">std::vector&lt;int&gt; v1; <span class="comment">//создаем объект класса вектор</span></div>
+<div class="line">cout&lt;&lt;<span class="stringliteral">&quot;hasIterator (yes) &quot;</span>&lt;&lt;<a class="code" href="../../d2/d94/structhasIterator.html">hasIterator</a> &lt;decltype (v1)&gt;<a class="code" href="../../d2/d94/structhasIterator.html#ab418551cb81cb7dee0f06b3da0a5938e">::value</a>&lt;&lt;endl; <span class="comment">//проверяем действительно ли v1 вектор имеет итераторы</span></div>
+<div class="ttc" id="astructhasIterator_html"><div class="ttname"><a href="../../d2/d94/structhasIterator.html">hasIterator</a></div><div class="ttdoc">Проверка класса Т на наличие итераторов</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00022">print_ip.h:23</a></div></div>
+<div class="ttc" id="astructhasIterator_html_ab418551cb81cb7dee0f06b3da0a5938e"><div class="ttname"><a href="../../d2/d94/structhasIterator.html#ab418551cb81cb7dee0f06b3da0a5938e">hasIterator::value</a></div><div class="ttdeci">static const bool value</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d97/print__ip_8h_source.html#l00036">print_ip.h:36</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00022">22</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a08a19992ba2adac06828d52264b66884"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08a19992ba2adac06828d52264b66884">&#9670;&nbsp;</a></span>False</h2>
@@ -142,7 +158,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00019">19</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00029">29</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
 
 </div>
 </div>
@@ -173,8 +189,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00021">21</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{};</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00031">31</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,8 +222,8 @@ template&lt;typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00024">24</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00034">34</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,7 +250,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00014">14</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00024">24</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
 
 </div>
 </div>
@@ -260,7 +276,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00026">26</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dd/d97/print__ip_8h_source.html#l00036">36</a> of file <a class="el" href="../../dd/d97/print__ip_8h_source.html">print_ip.h</a>.</p>
 
 </div>
 </div>
@@ -273,7 +289,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d2/d94/structhasIterator.html">hasIterator</a></li>
-    <li class="footer">Generated on Mon Oct 2 2023 05:58:15 for homework4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Oct 2 2023 06:43:38 for homework4 by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
