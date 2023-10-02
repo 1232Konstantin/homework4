@@ -29,5 +29,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          branch: "gh-pages"  # specify documentation branch name
+          branch: "gh-pages"  # specify documentation branch name -
           folder: "doc"      # specify doxygen output directory, see: OUTPUT_DIRECTORY, HTML_OUTPUT in Doxyfile 
