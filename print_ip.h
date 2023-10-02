@@ -7,7 +7,17 @@
 #include <vector>
 #include <tuple>
 
-
+/*!
+ * \brief Проверка класса Т на наличие итераторов
+ * \param T шаблонный параметр.
+ *
+ * \paragraph hasIterator Пример использования
+ * \code
+ * std::vector<int> v1; //создаем объект класса вектор
+ * cout<<"hasIterator (yes) "<<hasIterator <decltype (v1)>::value<<endl; //проверяем действительно ли v1 вектор имеет итераторы
+ * \endcode
+ *
+ */
 template < typename T>
 struct hasIterator
 {
@@ -26,9 +36,19 @@ struct hasIterator
     static const bool value= (sizeof (func(t))!=sizeof (False))? true : false;
 };
 
-
+/*!
+ * \brief Проверка класса Т на предмет принадлежности к std::tuple
+ * \param T шаблонный параметр.
+ *
+ * \paragraph is_Tuple Пример использования
+ * \code
+ * auto t=std::make_tuple(123,456,789,0);
+ * cout<<"is_Tuple (yes) "<<is_Tuple <decltype (t)>::value<<endl; //проверяем действительно ли t это tuple
+ * \endcode
+ *
+ */
 template < typename T>
-struct is_not_empty_Tuple
+struct is_Tuple
 {
     static const T t;
 
@@ -153,23 +173,32 @@ auto print_ip(T data)->typename std::enable_if< is_vector_or_list_std<T>::value 
 }
 
 //*****************************************tuple************************************
-
+/*!
+ * \brief Вспомогательный шаблонный класс для выбора нужной перегрузки функции printElement
+ */
 template<bool>
 struct howToDo{
     static const char value=1;
 };
 
+/*!
+ * \brief Вспомогательный шаблонный класс для выбора нужной перегрузки функции printElement
+ */
 template<>
 struct howToDo<false>{
     static const bool value=false;
 };
 
-
+/*!
+ * \brief Функция printElement предназначена для обхода кортежа произвольной длинны
+ */
 template<typename TupleType, size_t Idx, size_t IdxMax>
 void printElement(TupleType& , const bool){
     //stop
 }
-
+/*!
+ * \brief Функция printElement предназначена для обхода кортежа произвольной длинны
+ */
 template<typename TupleType, size_t Idx, size_t IdxMax>
 void printElement(TupleType& tuple, char)
 {
@@ -197,8 +226,8 @@ void printElement(TupleType& tuple, char)
  */
 
 
-template <typename T, typename F=typename std::enable_if< is_not_empty_Tuple<T>::value >::type>
-auto print_ip(T data)->typename std::enable_if< is_not_empty_Tuple<T>::value >::type {
+template <typename T, typename F=typename std::enable_if< is_Tuple<T>::value >::type>
+auto print_ip(T data)->typename std::enable_if< is_Tuple<T>::value >::type {
     constexpr auto size=std::tuple_size<T>();
     printElement<T, 0, size-1>(data, 'a');
 }
