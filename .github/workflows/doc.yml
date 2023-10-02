@@ -23,7 +23,7 @@ jobs:
         shell: bash
 
       - name: Generate Doxygen Documentation
-        run: .
+        run: .Doxyfile
         shell: bash
 
       - name: Deploy to GitHub Pages
